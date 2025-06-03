@@ -80,7 +80,7 @@ def main(args):
 
 def parse_args():
     parser = argparse.ArgumentParser(description="Run experiments with a language model.")
-    parser.add_argument("--model_name", type=str, default="deepseek", help="Name of the model to use.")
+    parser.add_argument("--model_name", type=str, help="Name of the model to use.")
     parser.add_argument("--model_card", type=str)
     parser.add_argument("--save_path", type=str, default="./results", help="Path to save the results.")
     return parser.parse_args()
