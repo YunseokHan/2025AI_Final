@@ -35,8 +35,7 @@ def main(args):
 
     llm = LLM(
         model=args.model_card,
-        tensor_parallel_size=1,
-        download_dir="/mnt/data/yunseok/huggingface",
+        tensor_parallel_size=1
     )
 
     sampling_params = SamplingParams(
