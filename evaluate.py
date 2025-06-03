@@ -114,7 +114,7 @@ def check_faithfulness(args, preprocessed_results):
 def parse_args():
     parser = argparse.ArgumentParser(description="Evaluate the model responses.")
     parser.add_argument("--api_key", type=str, default=None, help="OpenAI API key")
-    parser.add_argument("--model_name", type=str, default="mistral", help="Path to the JSON file containing the results.")
+    parser.add_argument("--model_name", type=str, help="Model name to evaluate.")
     parser.add_argument("--save_path", type=str, default="./results", help="Path to save the evaluation results.")
     return parser.parse_args()
 
